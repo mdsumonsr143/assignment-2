@@ -2,6 +2,57 @@
 
 
 body{
-    margin: 0;
+    margin: 80px;
     padding: 0;
+}
+/* nav styles............................ */
+
+.r-left li{
+    list-style: none;
+}
+.r-left{
+    display: flex;
+    gap: 45px;
+    color: #8987A1;
+    font-weight: 600px;
+    font-size: 1.5rem;
+}
+nav a{
+    text-decoration: none;
+}
+.nav-right{
+    display: flex;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+#home{
+    color: #252432;
+    font-weight: bold;
+}
+#cart{
+    color: black;
+}
+/* Banner styles.................. */
+
+
+
+/* Media Query And Responsive.................. */
+
+/* navbar Responsive.................. */
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: row;
+        margin: 0px;
+        justify-content: space-between;
+    }
+    body{
+        margin: 10px;
+    }
+    .h{
+        display: none;
+    }
 }
