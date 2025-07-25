@@ -1,42 +1,82 @@
+/* shared styles..................... */
+.noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 
-
-body{
+body {
     margin: 80px;
     padding: 0;
 }
+
 /* nav styles............................ */
 
-.r-left li{
+.r-left li {
     list-style: none;
 }
-.r-left{
+
+.r-left {
     display: flex;
     gap: 45px;
     color: #8987A1;
     font-weight: 600px;
     font-size: 1.5rem;
 }
-nav a{
+
+nav a {
     text-decoration: none;
 }
-.nav-right{
+
+.nav-right {
     display: flex;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
 }
-#home{
+
+#home {
     color: #252432;
     font-weight: bold;
 }
-#cart{
+
+#cart {
     color: black;
 }
+
 /* Banner styles.................. */
+
+.banner-title {
+    font-size: 4rem;
+}
+
+#text-color {
+    color: #E95A08;
+}
+.banner-des{
+    color: #000000;
+    font-size: 1.3rem;
+}
+.banner{
+    display: flex;
+    margin-top: 100px;
+    align-items: end;
+    text-align: left;
+}
 
 
 
@@ -44,15 +84,26 @@ nav a{
 
 /* navbar Responsive.................. */
 @media screen and (max-width: 576px) {
-    .navbar{
+    .navbar {
         flex-direction: row;
         margin: 0px;
         justify-content: space-between;
     }
-    body{
+
+    body {
         margin: 10px;
     }
-    .h{
+
+    .h {
         display: none;
+    }
+}
+/* banner responsive................. */
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .img{
+        width: 100%;
     }
 }
