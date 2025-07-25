@@ -151,7 +151,7 @@ nav a {
     position: relative;
     display: inline-block;
     width: auto;
- 
+
 }
 
 .ul-des {
@@ -176,10 +176,11 @@ nav a {
     font-weight: bold;
 }
 
-.l-right{
+.l-right {
     width: 524px;
     margin-left: 70px;
 }
+
 /* Latest Deal Section styles................. */
 .column {
     display: flex;
@@ -342,6 +343,7 @@ body join {
         flex-direction: row;
         margin: 0px;
         justify-content: space-between;
+        width: auto;
     }
 
     /* body {
@@ -368,6 +370,13 @@ body join {
 
 /* plants responsives............................ */
 @media screen and (max-width: 576px) {
+    body {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -389,6 +398,43 @@ body join {
     .btn-primary {
         width: 170px;
         height: 50px;
+    }
+
+    .cart {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+
+}
+
+/* plants lover................. */
+@media screen and (max-width: 576px) {
+
+    /* .body{
+        flex-direction: column;
+        display: none;
+
+    } */
+    .badge {
+        display: none;
+    }
+
+    .ul-des {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .l-right {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .store {
+        width: 360px;
+        height: 400px;
     }
 
 }
@@ -419,8 +465,6 @@ body join {
         padding: 10px;
         padding-bottom: 50px;
     }
-
-    5
 }
 
 /* footer responsive.............................. */
